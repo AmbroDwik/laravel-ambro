@@ -7,11 +7,18 @@
 
 
 <p>ini Halaman fakultas</p>
+{{--{{$fikr}}--}}
 
 
-<ul>
-@foreach($dataFakultas as $item)
-<li>{{$item}}</li>
-@endforeach
-</ul>
+<table class= "table table-hover">
+    <thead>
+        <tr><th>Nama Fakultas</th></tr>
+    </thead>
+    <tbody>
+        @foreach($dataFakultas as $item)
+        <tr><td>{{$item}}</td></tr>
+        @endforeach
+    </tbody>
+
+</table>
 @endsection
